@@ -1,9 +1,10 @@
 import java.util.*;
+
 class Restaurant{
     int id;
     private String name;
     private String loc;
-    private ArrayList<menuitem>menu;
+    private ArrayList<MenuItem>menu;
     Restaurant(int id,String name, String loc){
         this.id= id;
         this.name=name;
@@ -12,13 +13,13 @@ class Restaurant{
     public String getName(){
         return name;
     }
-    public String getloc(){
+    public String getLoc(){
         return loc;
     }
-    public void additem(menuitem dish){
+    public void addItem(MenuItem dish){
         menu.add(dish);
     }
-    public ArrayList<menuitem> Menu(){
+    public ArrayList<MenuItem> Menu(){
         return menu;
     }
 

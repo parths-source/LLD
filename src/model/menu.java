@@ -1,18 +1,27 @@
-class menuitem{
+class MenuItem{
     private String name;
     private int price;
-    private String imgurl;
-    menuitem(String name,int price,String imgurl){
+    private String imgUrl;
+    MenuItem(String name,int price,String imgUrl){
         this.name=name;
         this.price=price;
-        this.imgurl=imgurl;
+        this.imgUrl=imgUrl;
     }
-    String getname(){
+    public String getName(){
         return name;
     }
-    String setName(String newName){
+    public String setName(String newName){
         return newName;
     }
-    String
+    public int getPrice(){
+        return price;
+    }
+    public int setPrice(int newPrice){
+        return newPrice;
+    }
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
 
 }
